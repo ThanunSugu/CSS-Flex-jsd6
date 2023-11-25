@@ -22,6 +22,7 @@
     display: flex;     
     justify-content: flex-end;
     gap: 20px;
+    flex-direction: column; 
 }
 .f1-test{
     background-color: rgb(233, 225, 235 ,0.8);
@@ -38,7 +39,6 @@ h3{
 }
 .top{
     background-color: rgb(233, 225, 235 ,0.8);
-    /* flex-grow: 1; */
     display: flex;
     gap: 20px;
     padding: 10px;
@@ -46,11 +46,9 @@ h3{
 
 }
 .keywords{
-    /* background-color: rgb(255, 255, 255);     */
     padding: 5px;
     font-size: 1rem;
-    overflow: hidden;
-    
+    overflow: hidden;  
 
 }
 .text{
@@ -65,12 +63,6 @@ h3{
    overflow: hidden;
 }
 
-
-/* .L1{
-    display: flex;
-    justify-content: space-around;
-    padding-left: 75%;
-} */
 .f2{
     flex-grow: 0.2;
 }
@@ -79,8 +71,7 @@ h3{
 .mid{
     height: 20vh;
     background-color: rgb(241, 241, 255);
-    flex-grow: 1;
-    /* display: flex; */
+    flex-grow: 1;   
 }
 .left{
     background-color: rgb(241, 231, 231); 
@@ -89,11 +80,10 @@ h3{
 .center{
     background-color: rgb(255, 255, 255);
     flex-grow: 4;
-    display: flex;
-    /* flex-wrap: wrap;   */ 
+    display: flex;   
     justify-content: space-around;
     padding: 20px;
-    
+    flex-direction: column;      
      
 }
 .card{    
@@ -101,13 +91,7 @@ h3{
     transition: 0.3s;
     flex: 0 0 auto;
     margin: 10px;
-    text-align: center;
-    /* display: flex; */
-    /* position: absolute; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap;    */
-    /* justify-content: center; */    
-
+    text-align: center;  
 }
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -115,12 +99,9 @@ h3{
 .item{
     padding: 2px;
     margin: 10px;
-    
-    
 }
 
-.image{
-    /* width: 150px; */
+.image{    
     height: auto;
 }
 
@@ -132,12 +113,11 @@ h3{
 
 .down{
     background-color: rgb(233, 225, 235);;
-    /* 9898 */
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* flex-direction: row; */  
-    
+
 }
 p.f-desc{
     background-color: blueviolet;
@@ -153,32 +133,24 @@ p.f-desc{
 .navbar{
     background-color: rgb(241, 231, 231);    
     display: flex;
-    /* flex-direction: column;  */
-    /* flex-direction: row;  */
-    /* justify-content: flex-end; */
     justify-content: center;
-    /* position: ; */
-    
+   
     
     
 }
 .nav-list{
     flex-direction: column;
     text-align: center;
-    /* flex-direction: row;  */
     display: flex;
-    /* justify-content: space-between; */
-    /* justify-content: flex-end; */
     list-style: none;
-    gap: 20px;       
+    gap: 20px;  
     padding: 14px 16px;
    
 } 
 
 .nav-link{
     text-decoration: none;    
-    /* flex-direction: row;  */
-    /* flex-direction: column;  */
+
     
     
 }
@@ -189,14 +161,24 @@ p.f-desc{
 }
 
 @media (min-width : 475px) {
+
    .navbar{
         justify-content:flex-end;
     }   
    
-    .nav-list {
+    .nav-list{
         flex-direction: row; 
-        /* justify-content: center; */
-        /* display: flex; */
+
     }
-    
+    .filter-test{
+        flex-direction: row; 
+    }
+}
+
+@media (min-width : 1024px) {
+    .center{
+        flex-direction: row;  
+
+    }
+
 }
