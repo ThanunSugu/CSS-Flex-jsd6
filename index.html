@@ -6,20 +6,89 @@
     <link rel="stylesheet" href="styles.css">
     <title>Flex WS</title>
 </head>
-<body>
+<body>    
     <div class="app">
-        <header class="top">
+        <header class="top">            
             <h6 class="keywords">Keywords</h6>
             <input class="text" type="text" />
             <button class="submit" type="submit">Submit</button>
         </header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>   
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Products</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <h3>Ancient Table&Chair</h3>
+        <div class="filter">
+            
+            <div class="f1">
+            <legend class="L1">FILTER BY:</legend>
+            <!-- <label for="filters1">FILTER BY:</label><br> -->
+            
+            <select name="ancient" id="ancient">
+                <option value="item1">ชุดโต๊ะนั่งชิว</option>
+                <option value="item2">เก้าอี้พนักพิงไม้สัก</option>
+                <option value="item3">โต๊ะบานหน้าต่างเก่าไม้สัก</option>
+                <option value="item4">ม้านั่งไม้สักแท้</option>
+            </select>
+            </div>
+            
+            <div class="f2">
+            <legend class="L2">SORT BY:</legend>
+            <!-- <label for="filters2">SORT BY:</label> -->
+            
+            <select name="ancient" id="ancient">
+                <option value="item1">ราคา</option>
+                <option value="item2">ยอดนิยม</option>
+                <option value="item3">ใหม่ล่าสุด</option>                
+            </select>
+            </div>
+        </div>
         <main class="mid">
-           <aside class="left">L</aside>
-           <div class="center">C</div>
-           <aside class="right">R</aside>
+           <aside class="left"></aside>
+           <div class="center">
+                
+                <div class="card">
+                    <img class="image" src="img/1.jpg" alt="tableA"/>
+                    <div class="item">                        
+                        <p class="item-desc">ชุดโต๊ะนั่งชิว งานไม้พาเลท(ไม้สน)</p>
+                        <h4>฿790</h4>
+                    </div>                                        
+                </div>
+                <div class="card">
+                <img class="image" src="img/2.jpg" alt="chairA"/>
+                    <div class="item">                        
+                        <p class="item-desc">เก้าอี้พนักพิงไม้สักขาเเหลม</p>
+                        <h4>฿1,900</h4>
+                    </div>
+                </div>
+                <div class="card">
+                <img class="image" src="img/3.jpg" alt="chairB"/>
+                    <div class="item">                        
+                        <p class="item-desc">โต๊ะบานหน้าต่างเก่าไม้สัก</p>
+                        <h4>฿700</h4>
+                </div>
+                </div>
+                <div class="card">
+                    <img class="image" src="img/4.jpg" alt="tableB"/>
+                        <div class="item">                            
+                            <p class="item-desc">ม้านั่งไม้สักแท้</p>
+                            <h4>฿900</h4>
+                        </div>
+                </div>
+
+
+           </div>
+           <aside class="right"></aside>
         </main>
         <footer class="down">
-            <p>test</p>
+            <p class="f-desc">ชุดโต๊ะนั่งชิว</p>
+            <p class="f-desc">เก้าอี้พนักพิง</p>
+            <p class="f-desc">โต๊ะบานหน้าต่าง</p>
+            <p class="f-desc">ม้านั่งไม้สักแท้</p>        
         </footer>
     </div> 
 </body>
