@@ -7,7 +7,7 @@
 .app{
     font-family: 'Kanit', sans-serif;
     height: 100vh;    
-    background-color: wheat;  
+    background-color: rgb(247, 223, 179);  
       
     flex-direction: column;
     display: flex;
@@ -16,6 +16,22 @@
     border-color: rgb(114, 3, 114);
 
 }
+
+.filter-test{
+    background-color: rgb(233, 225, 235 ,0.8);
+    display: flex;     
+    justify-content: flex-end;
+    gap: 20px;
+}
+.f1-test{
+    background-color: rgb(233, 225, 235 ,0.8);
+    display: flex;
+    justify-items: flex-end;
+    flex-direction: column;
+    
+}
+
+
 h3{
     background-color: rgb(241, 231, 231);
     color: rgb(153, 118, 73);
@@ -48,24 +64,13 @@ h3{
    padding: 5px;
    overflow: hidden;
 }
-.filter{
-    display: flex;
-    /* justify-content:flex-end; */
-    /* text-align: right; */
-    
-}
 
-.f1{
+
+/* .L1{
     display: flex;
-    flex-grow: 7;
-    /* align-items: center; */
-    flex-direction: column; 
-    /* justify-content: flex-end; */
-    align-items: flex-end;
-}
-.L1{
-    /* display: flex; */
-}
+    justify-content: space-around;
+    padding-left: 75%;
+} */
 .f2{
     flex-grow: 0.2;
 }
@@ -195,10 +200,3 @@ p.f-desc{
     }
     
 }
-
-/* @media (minwidth : 768) {
-    .nav-list {
-        flex-direction: column; 
-        display: flex;
-    }
-} */
